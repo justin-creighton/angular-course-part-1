@@ -1,0 +1,16 @@
+
+<!--USING A TEMPLATE-->
+<h1 *ngIf="name; else noNameBlock">Hello: {{ name }}!</h1>
+
+<!--WHEN THE NAME DOES NOT EXIST IT WILL USE THE TEMPLATE INSTEAD-->
+<ng-template #noNameBlock>
+  <h1>Hello!</h1>
+</ng-template>
+
+
+<!--STRUCTURAL DIRECTIVE: *ngIf used for displaying elements based on conditions-->
+<p *ngIf="age">age: {{age}}</p>
+<p *ngIf="hairColor">hair color: {{hairColor}}</p>
+
+
+

@@ -1,0 +1,8 @@
+<!-- CANNOT USE NGIF AND NGFOR IN THE SAME COMPONENT -->
+<div *ngIf="showList">
+    <div *ngFor="let person of people; index as i">
+        <h3>{{i + 1}} of {{people.length}}: {{person.name}}</h3>
+        <p>Age: {{person.age}}</p>
+        <p>Hair color: {{person.hairColor}}</p>
+    </div>
+</div>
